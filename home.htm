@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        
+
+        header{
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+            width: 100%;
+            height: 70px;
+            
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            
+        }
+        .logo h1{
+            color: antiquewhite;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 20px ;
+        }
+        nav ul li{
+            text-decoration: none;
+            list-style: none;
+            margin: 0 50px 0 5px;
+            
+        }
+        nav a{
+            text-decoration: none;
+            color: white ;
+            font-size: 25px;
+            font-weight: bolder;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        nav ul{
+            display: flex;
+        }
+        .home{
+            width: 100%;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            display: flex;
+            position: relative;
+        }
+        .home .kopi{
+            color: burlywood;
+            font-weight: bolder;
+            font-size: 120px;
+            width: 100%;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .img video{
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            z-index: -3;
+            object-fit: cover;
+            object-position: center;
+            top: 0;
+            left: 0;
+        }
+        .home::before{
+            content:'';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.63);
+            z-index: -2;
+        }
+
+         
+            /* width: 70%; */
+            
+            
+            
+        
+        .konten .men{
+            color: antiquewhite;
+            margin-bottom: 25px;
+            text-align: center;
+            font-size: 25px;
+        }
+        .konten .button {
+            text-decoration: none;
+            background-color: burlywood;
+            padding: 12px 175px 12px 175px;
+            text-align: center;
+            border-radius: 6px;
+            transition: 1s ease;
+            color: antiquewhite;
+            align-items: center;
+            /* margin-left: 454px; */
+            transition: 1s ease;
+            font-size: 20px;
+        }
+        .konten .button a{
+            text-align: center;
+            
+        }
+        /* .button:hover{
+            padding: 12px 70px 12px 70px;
+            margin-left: 559px;
+        } */
+        .new .terbaru{
+            position: absolute;
+            top: 1200px;
+            left:42% ;
+            font-size: 30px;
+            font-weight: bolder;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+        .new .garis{
+            background-color: burlywood;
+            width: 500px;
+            height: 9px;
+            position: absolute;
+            top: 1250px;
+            left: 37%;
+            border-radius: 7px;
+            box-shadow: 0 0 2px;
+        }
+        .menu1{
+            position: relative;
+            width: 400px;
+            height: 630px ;
+            
+            position: absolute;
+            top: 1400px;
+            right: 400px;   
+            border-radius: 6px;
+            background-color: antiquewhite;
+        }
+        .menu1 .p{
+            font-weight: bolder ;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+            font-size: 25px;
+            margin: 10px 0 0 40px;
+        }
+        .menu1 img{
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+        }
+        .menu1 .des1{
+            font-size: 20px;
+            font-weight: bolder;
+            margin: 20px 20px 0 20px ;
+            text-align: justify;
+            color: grey;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            word-spacing: 2px;
+            line-height: 1.4;
+        }
+        .menu2{
+            position: relative;
+            width: 400px;
+            height: 630px ;
+            
+            position: absolute;
+            top: 1400px;
+            left: 400px;
+            border-radius: 6px;
+            background-color: antiquewhite;
+        }
+        .menu2 .pp{
+            font-weight: bolder;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 25px;
+            font-size: 25px;
+            margin: 10px 0 0 100px;
+        }    
+        .menu2 img{
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+        }
+        .menu2 .des2{
+            font-size: 20px;
+            font-weight: bolder;
+            margin: 20px 20px 0 20px ;
+            text-align: justify;
+            color: grey;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            word-spacing: 2px;
+            line-height: 1.4;
+            
+        }
+
+        .gampang{
+            position: relative;
+            top: 1300px;
+        }
+        .gampang img{
+            width: 100%;
+            height: 30%;
+            
+        }
+
+ 
+        
+         .gdl {
+            position: absolute;
+            top: 30%;
+            left: 15%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: space-between;
+        }
+
+        .gdl h1 {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .gdl .des{
+            color: white;
+        }
+
+        .gdl .garkel{
+            width: 290px;
+            height: 5px;
+            background-color: burlywood;
+            border-radius: 3px;
+            z-index: 20 ;
+            position: relative;
+            left: 14%;
+            margin: 20px 0 20px 0;
+
+        }
+
+        .gampang .gdl .lebih{
+            background-color: burlywood;
+            padding: 12px 0 12px 0px;
+            margin: 20px 0 0 0;
+            display: inline-block;
+            color: white;
+            font-weight: bold;
+            border-radius: 3px;
+        }
+        footer{
+            position: relative;
+        }
+        .fotcon{
+            background-color: burlywood;
+            display: flex;
+            flex-direction: column;
+            height: 200px;
+            width: 100%;
+            margin: 0;
+            padding: 40px 0 80px 0;
+            position: relative;
+            top: 1400px;
+        }
+
+        .nomor{
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            margin: auto;
+            font-size: 20px;
+            margin-top: 10px;
+            
+
+        }
+
+        .spanno{
+            word-spacing: 15px;
+        }
+
+        .fotdes1{
+            color: antiquewhite;
+            margin: auto;
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .fotdes2{
+            color: antiquewhite;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: auto;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        
+        .gambarfotter{
+            margin: auto;
+        }
+
+        hr{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>KOPI'YA</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="img"><video src="gambar/2909914-uhd_3840_2024_24fps.mp4" controls muted loop autoplay></video></div>
+        <div class="konten">
+            <h1 class="kopi">KOPI'YA</h1>
+            <p class="men">Menemani Hangatmu Setiap Hari</p>
+            <a href="" class="button">BUY NOW</a>
+        </div>
+    </section>
+    <section class="new">
+        <h1 class="terbaru">KELUARAN TERBARU</h1>
+        <p class="garis"></p>
+        <div class="menu1">
+            <img src="gambar/satu.png" alt="" srcset="">
+            <p class="p">Double Iced Shaken Latte</p>
+            <p class="des1">Doble Iced Shaken Latte adalah minuman kopi yang menyegarkan dengan sentuhan modern. Kopi ini disajikan dingin dan diberi guncangan untuk mencampurkan susu dan es.
+            </p>
+        </div>
+        <div class="menu2">
+            <img src="gambar/dua.png" alt="">
+            <p class="pp">Classic Milo Iced</p>
+            <p class="des2">Classic Milo Iced adalah varian minuman yang menggunakan bubuk cokelat Milo yang terkenal. Minuman ini biasanya disajikan dingin dengan es batu dan susu.</p>
+        </div>
+    </section>
+    <section class="gampang">
+        <div class="imgg"> 
+            <img src="gambar/gambar kopi opanjang bettttt.png" alt="">
+        </div>
+        <div class="gdl">
+            <h1 class="mennn">Menemani Hangatmu <br>Setiap Hari</h1>
+            <p class="garkel"></p>
+            <p class="des">Kopi yang Hangat akan Menemanimu dimanapun dan kapanpun. <br>lihatlah lebih lanjut tentang kopi'ya <br>untuk mendapatkan hari yang hangat setiap hari.</p>
+            <p class="lebih">Lebih Lanjut</p>
+        </div>
+
+    </section>
+    <footer>
+        <div class="fotcon">
+            <div class="gambarfotter">
+                <img src="gambar/KK-Halal-White.png" alt="">
+                <img src="gambar/KK-WBA-WHITE.png" alt="">
+            </div>
+            <div class="nomor">
+                <p>Jangan Lupa Ngopi <span class="spanno">YA 0821</span>-3465-1254 Chat Only</p>
+            </div>
+            <div class="fotdes1">
+                <p>Menemani Hangat Mu Setiap Hari</p> 
+            </div>
+            <hr>
+            <div class="fotdes2">
+                <p>Hak Cipta &copy; PT Kopi'YA</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
