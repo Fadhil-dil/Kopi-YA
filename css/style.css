@@ -135,12 +135,17 @@
             position: relative;
             width: 400px;
             height: 630px ;
-            
+            transition-duration: 600ms;
             position: absolute;
             top: 1400px;
             right: 400px;   
             border-radius: 6px;
             background-color: antiquewhite;
+        }
+
+        .menu1:hover{
+            box-shadow: 0 0 20px rgb(144, 141, 141);
+
         }
         .menu1 .p{
             font-weight: bolder ;
@@ -166,12 +171,17 @@
             position: relative;
             width: 400px;
             height: 630px ;
-            
+            transition-duration: 600ms;
             position: absolute;
             top: 1400px;
             left: 400px;
             border-radius: 6px;
             background-color: antiquewhite;
+        }
+
+        .menu2:hover{
+            box-shadow: 0 0 20px rgb(144, 141, 141);
+
         }
         .menu2 .pp{
             font-weight: bolder;
@@ -247,6 +257,7 @@
             color: white;
             font-weight: bold;
             border-radius: 3px;
+            cursor: pointer;
         }
         footer{
             position: relative;
@@ -299,6 +310,4 @@
             margin: auto;
         }
 
-        hr{
-            color: blue;
-        }
+        
